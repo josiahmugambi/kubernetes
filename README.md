@@ -8,8 +8,8 @@ I first started by going through [Kelsey Hightower's Kubernetes The Hard Way](ht
 
 ## Kubernetes The Hard Way
 
-Kubernetes The Hard Way - GCP
-Kubernetes The Hard Way - AWS
+- [Kubernetes The Hard Way - GCP](docs/k8s-the-hard-way-gcp.md)
+- Kubernetes The Hard Way - AWS(docs/k8s-the-hard-way-aws.md)
 
 
 
