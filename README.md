@@ -1,16 +1,13 @@
 # About
 
-As part of #LifeLongLearning, I hope to actively document what I am currently learning. This process hopefully will help me gain deeper knowledge of various topics. 
+I believe in #LifeLongLearning and I hope to actively document this process, which hopefully helps me gain deeper knowledge of various topics. 
 
-This repo documents my dive into Kubernetes. I've previously played around with Google's GKE and Amazon's EKS but in order to gain a deeper understanding, I decided it would be worthwhile to take a somewhat agnostic approach. 
+This repo containers my notes etc from my dive into Kubernetes. I've previously played around with [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine) and [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks) but in order to gain a deeper understanding, I decided it would be worthwhile to take a more barebones approach.
 
 I first started by going through [Kelsey Hightower's Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) and now I'm working through [this adaptation for AWS by Prabhat Sharma](https://github.com/prabhatsharma/kubernetes-the-hard-way-aws)
 
 ## Kubernetes The Hard Way
 
-- [Kubernetes The Hard Way - GCP](docs/k8s-the-hard-way-gcp.md)
-- Kubernetes The Hard Way - AWS(docs/k8s-the-hard-way-aws.md)
-
-
-
+- [Kubernetes The Hard Way - GCP](docs/k8s-the-hard-way-gcp.md) *Yet to add my notes*
+- [Kubernetes The Hard Way - AWS](docs/k8s-the-hard-way-aws.md)
 
