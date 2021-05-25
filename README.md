@@ -1,4 +1,4 @@
-# learning-notes-kubernetes
+# Learning Notes - Kubernetes
 Learning Notes - Kubernetes 
 
 As part of #LifeLongLearning, I hope to actively document what I am currently learning. This process hopefully will help me gain deeper knowledge of various topics. 
