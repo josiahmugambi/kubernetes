@@ -6,7 +6,7 @@ I followed the labs pretty much all the way.
 
 
 
-#### Prerequisites and Client Tools
+### Prerequisites and Client Tools
 
 Prefer to create own project and configurations under gcloud:
 
@@ -36,8 +36,9 @@ Runtime: go1.16.3
 [josiah:~/dev/k8s-thw-gcp]$ kubectl version --client
 Client Version: version.Info{Major:"1", Minor:"21", GitVersion:"v1.21.0", GitCommit:"cb303e613a121a29364f75cc67d3d580833a7479", GitTreeState:"clean", BuildDate:"2021-04-08T21:16:14Z", GoVersion:"go1.16.3", Compiler:"gc", Platform:"darwin/amd64"}
 ```
+### Provisioning Compute Resources
 
-#### The Kubernetes Network Model
+##### The Kubernetes Network Model
 
 Before jumping into provisioning compute resources I took some time to refresh on concepts.
 
@@ -69,4 +70,18 @@ Run on worker nodes
     - cluster resource monitoring
     - cluster level logging
 
-### Provisioning Compute Resources
+
+
+Followed the [lab instructions](https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/03-compute-resources.md). Successfully created the controller and worker instances:
+
+```
+[josiah:~/dev/k8s-thw-gcp]$ gcloud compute instances list
+NAME          ZONE        MACHINE_TYPE   PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP    STATUS
+controller-0  us-east1-b  e2-standard-2               10.240.0.10  35.227.78.5    RUNNING
+controller-1  us-east1-b  e2-standard-2               10.240.0.11  34.73.84.217   RUNNING
+controller-2  us-east1-b  e2-standard-2               10.240.0.12  35.231.41.251  RUNNING
+worker-0      us-east1-b  e2-standard-2               10.240.0.20  34.74.209.18   RUNNING
+worker-1      us-east1-b  e2-standard-2               10.240.0.21  34.75.106.183  RUNNING
+worker-2      us-east1-b  e2-standard-2               10.240.0.22  104.196.63.65  RUNNING
+```
+
