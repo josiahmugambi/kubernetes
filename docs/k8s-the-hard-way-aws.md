@@ -69,4 +69,22 @@ controller-2  us-east1-b  e2-standard-2               10.240.0.12  35.231.41.251
 
 ```
 ### Provisioning a CA and Generating TLS Certificates
-to be continued... 
+[Instructions](https://github.com/prabhatsharma/kubernetes-the-hard-way-aws/blob/master/docs/05-kubernetes-configuration-files.md) are straightforward to follow. Typing (vs copy and paste) allowed me to gain a better understanding of what each command does.
+
+General flow:
+- create JSON file with cert data
+- generate certificate against CA and profile created previously
+- once all the certificates are generated, copy to worker instances and controller instances respectively
+
+Certificates:
+- admin user
+- node authorizer  (for requests by kubelets)
+- Controller Manager (kube-controller-manager)
+- Kube Proxy Client (kube-proxy)
+- Kube Scheduler (kube-scheduler)
+- API Server (kube-apiserver)
+    kubernetes API server is automatically assigned the kubernetes internal dns name and is tied to the first IP address from the range 10.32.0.0/24 reserved for internal cluster services when bootstrapping
+- Service Account Key-Pair (service-account)
+
+### Generating Kubernetes Configuration Files for Authentication
+to be continued...
