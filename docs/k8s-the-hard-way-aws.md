@@ -69,7 +69,7 @@ controller-2  us-east1-b  e2-standard-2               10.240.0.12  35.231.41.251
 
 ```
 ### Provisioning a CA and Generating TLS Certificates
-[Instructions](https://github.com/prabhatsharma/kubernetes-the-hard-way-aws/blob/master/docs/05-kubernetes-configuration-files.md) are straightforward to follow. Typing (vs copy and paste) allowed me to gain a better understanding of what each command does.
+[Instructions](https://github.com/prabhatsharma/kubernetes-the-hard-way-aws/blob/master/docs/04-certificate-authority.md) are straightforward to follow. Typing (vs copy and paste) allowed me to gain a better understanding of what each command does.
 
 General flow:
 - create JSON file with cert data
@@ -87,4 +87,20 @@ Certificates:
 - Service Account Key-Pair (service-account)
 
 ### Generating Kubernetes Configuration Files for Authentication
-to be continued...
+Relatively straightfoward to do. Just followed the [instructions](https://github.com/prabhatsharma/kubernetes-the-hard-way-aws/blob/master/docs/05-kubernetes-configuration-files.md). Again, typing more useful - more so when you inevitably make a typo and have to figure out where you do so.
+
+This section creates kubeconfig files for:
+
+This section creates kubeconfig files for:
+- kubelets: worker-N.kubeconfig
+- kube-proxy
+- kubernetes controller manager
+- kube-scheduler
+- admin user
+
+They are then distributed as follows:
+- worker instances: kubelets (respective file), kube-proxy
+- controller instances: kube-controller-manager, kube-scheduler, admin 
+
+### Generating the Data Encryption Config and Key
+To be continued..

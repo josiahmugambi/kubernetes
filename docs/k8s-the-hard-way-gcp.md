@@ -105,4 +105,18 @@ Certificates:
 - Service Account Key-Pair (service-account)
 
 ### Generating Kubernetes Configuration Files for Authentication
-to be continued... 
+Relatively straightfoward to do. Just followed the [instructions](https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/05-kubernetes-configuration-files.md). Again, typing more useful - more so when you inevitably make a typo and have to figure out where you do so.
+
+This section creates kubeconfig files for:
+- kubelets: worker-N.kubeconfig
+- kube-proxy
+- kubernetes controller manager
+- kube-scheduler
+- admin user
+
+They are then distributed as follows:
+- worker instances: kubelets (respective file), kube-proxy
+- controller instances: kube-controller-manager, kube-scheduler, admin 
+
+### Generating the Data Encryption Config and Key
+To be continued..
