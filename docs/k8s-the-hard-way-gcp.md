@@ -119,4 +119,19 @@ They are then distributed as follows:
 - controller instances: kube-controller-manager, kube-scheduler, admin 
 
 ### Generating the Data Encryption Config and Key
-To be continued..
+These are used for securely storing kubernetes data and secrets.
+Instructions from the [lab](https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/06-data-encryption-keys.md) are straight forward.
+These are then copied to each of the controller instances.
+
+### Bootstrapping the etcd cluster
+Instructions followed [here](https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/07-bootstrapping-etcd.md). Again, typing more useful - more so when you inevitably make a typo and have to figure out where you do so, and one learns something along the way.
+
+Commands were run using tmux
+
+Quick steps if on iTerm2 on MacOS:
+- `tmux -CC`
+- split screen into 3 and log into three respective instances (would be controllers for the first bit)
+- on tmux session dialog, run command `set synchronize-panes on`
+
+### Bootstrapping the Kubernetes Control Plane
+To be continued
